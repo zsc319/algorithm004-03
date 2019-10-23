@@ -18,7 +18,7 @@ class MyCircularDeque:
     def _delAfter(self, node):
         nxt = node.nxt.nxt
         node.nxt = nxt
-        nxt.pre = node
+        nxt.pre = node 
     
     def insertFront(self, value: 'int') -> 'bool':
         if self.cnt == self.k: return False
